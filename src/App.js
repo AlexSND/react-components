@@ -6,6 +6,8 @@ import Main from './components/Main/Main'
 import ButtonPage from './pages/ButtonPage'
 import ButtonGroupPage from './pages/ButtonGroupPage'
 import Nav from './components/Nav/Nav'
+import Icon from './components/Icon/Icon'
+import IconPage from './pages/IconPage'
 
 function App() {
   return (
@@ -20,6 +22,9 @@ function App() {
           </Route>
           <Route path='/button-group'>
             <ButtonGroupPage/>
+          </Route>
+          <Route path='/icon'>
+            <IconPage/>
           </Route>
         </Switch>
       </Main>
