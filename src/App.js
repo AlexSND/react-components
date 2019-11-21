@@ -4,6 +4,7 @@ import './style.scss'
 import Header from './components/Header/Header'
 import Main from './components/Main/Main'
 import ButtonPage from './pages/ButtonPage'
+import ButtonGroupPage from './pages/ButtonGroupPage'
 import Nav from './components/Nav/Nav'
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
         <Switch>
           <Route path='/button'>
             <ButtonPage/>
+          </Route>
+          <Route path='/button-group'>
+            <ButtonGroupPage/>
           </Route>
         </Switch>
       </Main>

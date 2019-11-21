@@ -8,6 +8,9 @@ const Nav = () => {
       <li className='nav__item'>
         <NavLink to='/button'>Button</NavLink>
       </li>
+      <li className='nav__item'>
+        <NavLink to='/button-group'>Button group</NavLink>
+      </li>
     </ul>
   )
 }
