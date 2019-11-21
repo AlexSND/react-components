@@ -29,6 +29,9 @@ const config = {
       },
     ]
   },
+  devServer: {
+    historyApiFallback: true
+  },
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'style.css'

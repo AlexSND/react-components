@@ -1,0 +1,21 @@
+.nav {
+
+  &__item {
+    margin-bottom: 1px;
+    background-color: #213B58;
+    font-size: 18px;
+  }
+
+  a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-left: 0 solid #42B6F6;
+    transition: 0.1s;
+
+    &.active {
+      border-left-width: 3px;
+    }
+  }
+}

@@ -1,11 +1,25 @@
 import React from 'react'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import './style.scss'
+import Header from './components/Header/Header'
+import Main from './components/Main/Main'
+import ButtonPage from './pages/ButtonPage'
+import Nav from './components/Nav/Nav'
 
 function App() {
   return (
-    <div>
-      <h1>hello</h1>
-    </div>
+    <BrowserRouter>
+      <Header>
+        <Nav/>
+      </Header>
+      <Main>
+        <Switch>
+          <Route path='/button'>
+            <ButtonPage/>
+          </Route>
+        </Switch>
+      </Main>
+    </BrowserRouter>
   )
 }
 
